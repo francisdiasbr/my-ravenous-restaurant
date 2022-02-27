@@ -9,7 +9,7 @@ const sortByOptions = {
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       term: '',
       location: '',
@@ -24,7 +24,7 @@ class SearchBar extends React.Component {
     this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
     event.preventDefault();
   }
-  
+
   handleTermChange(event) {
     this.setState({ term: event.target.value });
   }
